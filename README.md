@@ -9,6 +9,6 @@
 3. User can rate and leave reviews
 4. User can find other users(email) with similar tastes in books  
 # ERD
-<img width="877" alt="Screen Shot 2022-10-10 at 11 22 08 PM" src="https://user-images.githubusercontent.com/106207380/195102177-5ba995df-6dd2-4298-aa04-4b358e2f6a62.png">
+<img width="918" alt="Screen Shot 2022-10-11 at 11 54 55 AM" src="https://user-images.githubusercontent.com/106207380/195141014-42c4f231-268f-4a77-911a-17bb93af6cb9.png">
 
 # Tech stack: Python, Django, Postgresql
