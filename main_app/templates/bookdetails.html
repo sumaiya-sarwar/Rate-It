@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+   
+    
+    <div class="card text-bg-dark">
+        <img width="200px" src="{{book.img}}" class="card-img" alt="{{book.title}}">
+        
+      </div>
+
+    <div>
+        <p>Title: {{book.title}}</p>
+        <p>Author: {{book.author}}</p>
+        <p>Description: {{book.description}}</p>
+    </div>
+
+    <button><a href="{% url 'book_update' book.pk %}">Update</button>
+
+    <button><a href="/books/{{book.id}}/delete">Delete</button>
+
+    <div>
+        <button><a href="/favorites">Add to favorites</button>
+    </div>
+    
+
+{% endblock %}

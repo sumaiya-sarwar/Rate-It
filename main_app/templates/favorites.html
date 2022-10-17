@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+    {% for favorite in favorites %}
+
+   
+
+            {% for book in favorite.favbooks.all %}
+
+                <div>
+                    <span>{{forloop.counter}}</span>
+                    <span><b>{{book.title}}</b></span>
+                    <span>
+                        <!--   Here we are creating an anchor
+                        tag that when clicked will hit our new
+                        route and send a query to remove the song     -->
+                        <a href="{% url 'favorites_list' favorite.pk book.pk %}?assoc=remove" class="button is-danger is-outlined">
+                        <span class="icon is-small">
+                            <i class="fas fa-times"></i>
+                        </span>
+                        </a>
+                    </span>
+                </div>
+
+            {% endfor %}
+        </div>
+    {% empty %} 
+        <div class="playlist mb-5">"There are no favorites"</div>
+    {% endfor %}
+</div>
+{% endblock %}
